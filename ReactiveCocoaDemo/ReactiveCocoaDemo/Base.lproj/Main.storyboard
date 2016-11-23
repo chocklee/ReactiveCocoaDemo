@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2c8-8y-Q8v">
+                                <rect key="frame" x="50" y="260" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ub-VZ-6W2">
+                                <rect key="frame" x="100" y="320" width="214" height="40"/>
+                                <color key="backgroundColor" red="0.28390149084838978" green="0.78214827271614773" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Jm-LJ-S8m"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huj-Cf-nu7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGC-bb-sxZ">
+                                <rect key="frame" x="50" y="200" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HGC-bb-sxZ" secondAttribute="trailing" constant="50" id="2oB-m7-IWy"/>
+                            <constraint firstItem="2c8-8y-Q8v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="BcH-Cl-acu"/>
+                            <constraint firstItem="HGC-bb-sxZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="Jd8-F1-P4D"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ub-VZ-6W2" secondAttribute="trailing" constant="100" id="QQD-4m-JBY"/>
+                            <constraint firstItem="2c8-8y-Q8v" firstAttribute="top" secondItem="HGC-bb-sxZ" secondAttribute="bottom" constant="30" id="Yqo-Xb-DBG"/>
+                            <constraint firstItem="HGC-bb-sxZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="aae-Ww-B0P"/>
+                            <constraint firstAttribute="trailing" secondItem="2c8-8y-Q8v" secondAttribute="trailing" constant="50" id="o73-H9-jqW"/>
+                            <constraint firstItem="5Ub-VZ-6W2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="sZc-9J-QKd"/>
+                            <constraint firstItem="5Ub-VZ-6W2" firstAttribute="top" secondItem="2c8-8y-Q8v" secondAttribute="bottom" constant="30" id="wuc-Oa-et7"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="loginButton" destination="5Ub-VZ-6W2" id="KG4-6A-H8d"/>
+                        <outlet property="passwordField" destination="2c8-8y-Q8v" id="Cso-85-EOD"/>
+                        <outlet property="usernameField" destination="HGC-bb-sxZ" id="iyM-8a-bmn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="296"/>
+        </scene>
+    </scenes>
+</document>
